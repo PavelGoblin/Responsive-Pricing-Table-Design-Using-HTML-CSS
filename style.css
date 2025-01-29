@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1b1b1b;
+    font-family: "Open Sans", sans-serif;
+}
+
+.pricing-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 10px;
+}
+
+.pricing-title {
+    text-align: center;
+}
+
+.pricing-title h4 {
+    color: #7f7f7f;
+}
+
+.pricing-title h1 {
+    color: #fff;
+}
+.pricing-title h1 span{
+    color: #ffd000;
+}
+
+.pricing-wrapper {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.pricing {
+    width: 320px;
+}
+
+.pricing-details {
+    padding: 30px;
+    background-color: #232323;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.list img {
+    width: 20px;
+}
+
+.price-box {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #363636;
+}
+
+.price-box p {
+    color: #fff;
+}
+
+.price-box p span {
+    color: #ffd000;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.list {
+    margin-top: 20px;
+}
+
+.list ul {
+    list-style: none;
+}
+
+.list ul li {
+    color: #fff;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.list ul li img {
+    position: absolute;
+    left: 0;
+}
+
+.action {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.action a {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transform: .4s;
+}
+
+.action a:hover {
+    background-color: #ffd000;
+    color: #1b1b1b;
+}
+
+.pricing-plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    position: relative;
+}
+
+.plan-name {
+    background-color: #ffd000;
+    font-weight: 500;
+    padding: 5px 20px;
+    border-radius: 50px;
+}
+
+.pricing-plan .left,
+.pricing-plan .right {
+    height: 45px;
+    width: 45px;
+    background-color: #232323;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.pricing-plan .left::before {
+    position: absolute;
+    content: '';
+    border-bottom: 45px solid #232323;
+    border-right: 45px solid transparent;
+    left: 40px; 
+    bottom: 0;
+}
+.pricing-plan .right::before {
+    position: absolute;
+    content: '';
+    border-bottom: 45px solid #232323;
+    border-left: 45px solid transparent;
+    right: 40px; 
+    bottom: 0;
+}
+
+@media screen and (max-width:768.9px) {
+     .pricing-wrapper{
+         grid-template-columns: auto;
+     }
+     .pricing{
+         width: auto;
+     }
+}
